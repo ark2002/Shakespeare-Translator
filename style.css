@@ -30,9 +30,13 @@ body {
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  height: 40rem;
+    max-height: 50vh;
+    max-width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 textarea {
@@ -80,17 +84,18 @@ button {
   border-top-right-radius: 1rem;
 }
 
-.footer .link {
+.footer,
+i {
   color: var(--secondary-color);
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 5vh;
+  margin-right: 0.6vw;
+  margin-left: 0.6vw;
 }
 
-.footer ul {
-  padding-inline-start: 0px;
-}
-
-.footer .footer-header {
-  font-weight: bold;
-  font-size: x-large;
+.footer {
+    margin-bottom: 2vh;
 }
 
 .list-non-bullet {
@@ -111,4 +116,18 @@ button {
 
 .tbplaceholder {
   padding: 10px;
+}
+
+.github-repo {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.github-repo-link {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.4rem;
 }
